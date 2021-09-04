@@ -6,21 +6,20 @@
 
     <div class="toolbar">
         <div class="toolbar-item view">
-            <a class="view-tab">编辑</a>
-            <a class="view-tab">预展</a>
-            <a class="view-size">最大化</a>
-            <a class="view-divide">分屏</a>
+            {% comment %} <a class="view-tab">Edit</a> {% endcomment %}
+            {% comment %} <a class="view-tab">预展</a> {% endcomment %}
+            <a class="view-size">Fullscreen</a>
+            {% comment %} <a class="view-divide">Divide</a> {% endcomment %}
         </div>
 
-        <div class="toolbar-item shortcuts">
-            <a class="bold">加粗</a>
-            <a class="italic">斜体</a>
-            <a class="underline">下划线</a>
+        {% comment %} <div class="toolbar-item shortcuts">
+            <a class="bold">Bold</a>
+            <a class="italic">Italic</a>
+            <a class="underline">Underline</a>
             <a class="line-between">分隔线</a>
-            <a class="code">代码块</a>
-        </div>
-    </div>
-
+            <a class="code">Code block</a>
+        </div>{% endcomment %}
+    </div> 
     <div class="content">
         <div id="editor-id" class="content-item"></div>
         <div id="preview-id" class="content-item markdown-body"></div>

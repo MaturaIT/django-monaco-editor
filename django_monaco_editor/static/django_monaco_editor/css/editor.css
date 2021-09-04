@@ -7,7 +7,7 @@ textarea[use-monaco-editor="true"] {
 }
 
 .custom-area {
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
     padding-top: 36px;
 }
@@ -61,7 +61,7 @@ textarea[use-monaco-editor="true"] {
 }
 
 /*解决单行内容过长的溢出问题*/
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .custom-area .content {
         width: calc(100vw - 60px - 20px);
     }
@@ -71,7 +71,7 @@ textarea[use-monaco-editor="true"] {
     .custom-area .content {
         width: calc(100vw - 80px - 20px);
     }
-}
+} */
 
 /*预展*/
 .custom-area-preview .toolbar .shortcuts,
@@ -105,6 +105,7 @@ textarea[use-monaco-editor="true"] {
     background-color: #fff;
     height: 100%;
     padding: 0;
+    z-index: 200; /*TODO: */
 }
 
 .full-screen .content {

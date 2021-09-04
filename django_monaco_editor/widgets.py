@@ -14,6 +14,12 @@ class MonacoEditorWidget(forms.Textarea):
         template = get_template(custom_template)
         return template.render({'textarea_widget': textarea_widget})
 
+    def __init__(self, language='markdown', attrs=None):
+        default_attrs = {'monaco-language': language}
+        if attrs:
+            default_attrs.update(attrs)
+        super().__init__(attrs=default_attrs)
+
     class Media:
         css = {
             'all': (

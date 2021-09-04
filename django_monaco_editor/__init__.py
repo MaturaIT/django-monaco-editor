@@ -1,3 +1,3 @@
-__VERSION__ = '1.0.9'
+__VERSION__ = '1.0.19'
 __AUTHOR__ = 'noteby'
-__AUTHOR_EMAIL__ = 'l.y.h.rothschild@gmail.com'
+__AUTHOR_EMAIL__ = ''
