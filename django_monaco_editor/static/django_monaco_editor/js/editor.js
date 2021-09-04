@@ -44,6 +44,9 @@ require(['vs/editor/editor.main'], function () {
         // });
     
         // 监听提交表单操作，传值给实际的textarea
+        content.addEventListener('input', function() {
+            editor.setValue(content.value);
+        })
         //TODO: debounce?
         editor.onDidChangeModelContent(function() {
             content.value = editor.getValue();
